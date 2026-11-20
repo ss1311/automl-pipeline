@@ -1,0 +1,30 @@
+[project]
+name = "automl-pipeline-hub"
+version = "0.1.0"
+description = "AutoML Pipeline Hub with FastAPI, Optuna, and MLflow"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.110.0",
+    "mlflow>=2.10.0",
+    "optuna>=3.5.0",
+    "pandas>=2.2.0",
+    "pydantic>=2.6.0",
+    "python-multipart>=0.0.9",
+    "requests>=2.31.0",
+    "scikit-learn>=1.4.0",
+    "streamlit>=1.30.0",
+    "uvicorn>=0.27.0",
+    "xgboost>=2.0.0",
+    "lightgbm>=4.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
